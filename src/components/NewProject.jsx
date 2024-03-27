@@ -2,13 +2,13 @@ import Input from "./Input.jsx";
 
 export default function NewProject() {
   return (
-    <>
-      <menu>
+    <div className="w-[32rem] mt-16">
+      <menu className="flex items-center justify-end gap-4 my-4">
         <li>
-          <button>Save</button>
+          <button className=" text-stone-700 hover:text-stone-950">Save</button>
         </li>
         <li>
-          <button>Delete</button>
+          <button className="px-6 py-2 rounded-md bg-stone-800 text-stone-50 hover:bg-stone-950">Delete</button>
         </li>
       </menu>
       <div>
@@ -16,6 +16,6 @@ export default function NewProject() {
         <Input label="Description" textarea />
         <Input label="Due Date" />
       </div>
-    </>
+    </div>
   );
 }
